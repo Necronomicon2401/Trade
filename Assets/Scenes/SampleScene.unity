@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &12485538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 11
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 343662334}
   m_Layer: 5
   m_Name: InventoryBox (2)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 369656870}
   m_Layer: 5
   m_Name: InventoryBox (8)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 445027837}
   m_Layer: 5
   m_Name: InventoryBox (15)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 475629421}
   m_Layer: 5
   m_Name: InventoryBox (9)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 565663243}
   m_Layer: 5
   m_Name: InventoryBox (11)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 573319203}
   m_Layer: 5
   m_Name: InventoryBox (10)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 614550908}
   m_Layer: 5
   m_Name: InventoryBox (1)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1583,7 +1583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 620488030}
   m_Layer: 5
   m_Name: InventoryBox (9)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 667454578}
   m_Layer: 5
   m_Name: InventoryBox (5)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 668875573}
   m_Layer: 5
   m_Name: InventoryBox (10)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 30
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2233,7 +2233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -762, y: 77}
+  m_AnchoredPosition: {x: 716, y: 77}
   m_SizeDelta: {x: 173.093, y: 177.661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702152803
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &702152806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2327,7 +2327,7 @@ GameObject:
   - component: {fileID: 703574366}
   m_Layer: 5
   m_Name: InventoryBox
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2552,7 +2552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2643,7 +2643,7 @@ GameObject:
   - component: {fileID: 738023214}
   m_Layer: 5
   m_Name: InventoryBox (8)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2810,7 +2810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &833673379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2850,7 +2850,7 @@ GameObject:
   - component: {fileID: 888541338}
   m_Layer: 5
   m_Name: InventoryBox (12)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2939,7 +2939,7 @@ GameObject:
   - component: {fileID: 896175148}
   m_Layer: 5
   m_Name: InventoryBox (12)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3028,7 +3028,7 @@ GameObject:
   - component: {fileID: 900032408}
   m_Layer: 5
   m_Name: InventoryBox (1)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3117,7 +3117,7 @@ GameObject:
   - component: {fileID: 916243593}
   m_Layer: 5
   m_Name: InventoryBox (11)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3289,7 +3289,7 @@ GameObject:
   - component: {fileID: 971566504}
   m_Layer: 5
   m_Name: InventoryBox (7)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3421,7 +3421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3512,7 +3512,7 @@ GameObject:
   - component: {fileID: 1013648512}
   m_Layer: 5
   m_Name: InventoryBox (14)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3711,18 +3711,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d66a4cd740aa8408d9a014c4beefa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGold: 0
-  traderGold: 0
+  playerGold: 20
+  traderGold: 20
   playerItems:
   - {fileID: 2108179635}
   - {fileID: 12485533}
   - {fileID: 833673374}
   - {fileID: 1955002704}
   - {fileID: 1384442476}
+  traderItems:
   - {fileID: 702152801}
   - {fileID: 1819463114}
   - {fileID: 1842877198}
-  traderItems:
   - {fileID: 1422119856}
 --- !u!114 &1037669416
 MonoBehaviour:
@@ -3752,7 +3752,7 @@ GameObject:
   - component: {fileID: 1088154422}
   m_Layer: 5
   m_Name: InventoryBox (2)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3841,7 +3841,7 @@ GameObject:
   - component: {fileID: 1107581035}
   m_Layer: 5
   m_Name: InventoryBox (3)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3930,7 +3930,7 @@ GameObject:
   - component: {fileID: 1170016840}
   m_Layer: 5
   m_Name: InventoryBox
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4019,7 +4019,7 @@ GameObject:
   - component: {fileID: 1200245068}
   m_Layer: 5
   m_Name: InventoryBox (13)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4108,7 +4108,7 @@ GameObject:
   - component: {fileID: 1276919552}
   m_Layer: 5
   m_Name: InventoryBox (4)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4331,7 +4331,7 @@ GameObject:
   - component: {fileID: 1346000156}
   m_Layer: 5
   m_Name: InventoryBox (6)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4576,7 +4576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1384442481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4694,7 +4694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1422119861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4777,7 +4777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4868,7 +4868,7 @@ GameObject:
   - component: {fileID: 1481756097}
   m_Layer: 5
   m_Name: InventoryBox (13)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4957,7 +4957,7 @@ GameObject:
   - component: {fileID: 1520326188}
   m_Layer: 5
   m_Name: InventoryBox (14)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5046,7 +5046,7 @@ GameObject:
   - component: {fileID: 1597017118}
   m_Layer: 5
   m_Name: InventoryBox (15)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5135,7 +5135,7 @@ GameObject:
   - component: {fileID: 1648092638}
   m_Layer: 5
   m_Name: InventoryBox (6)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5608,7 +5608,7 @@ GameObject:
   - component: {fileID: 1750727805}
   m_Layer: 5
   m_Name: InventoryBox (3)
-  m_TagString: InventoryBox
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5721,7 +5721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -543, y: 76}
+  m_AnchoredPosition: {x: 497, y: 84}
   m_SizeDelta: {x: 173.093, y: 177.661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1819463116
@@ -5775,7 +5775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1819463119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5839,7 +5839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -323, y: 71}
+  m_AnchoredPosition: {x: 499, y: 306}
   m_SizeDelta: {x: 173.093, y: 177.661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842877200
@@ -5893,7 +5893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1842877203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5933,7 +5933,7 @@ GameObject:
   - component: {fileID: 1847110170}
   m_Layer: 5
   m_Name: InventoryBox (7)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6156,7 +6156,7 @@ GameObject:
   - component: {fileID: 1930538891}
   m_Layer: 5
   m_Name: InventoryBox (4)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6323,7 +6323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1955002709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6363,7 +6363,7 @@ GameObject:
   - component: {fileID: 2089481993}
   m_Layer: 5
   m_Name: InventoryBox (5)
-  m_TagString: InventoryBox
+  m_TagString: Trader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6530,7 +6530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1037669413}
-  baseRectTransform: {fileID: 0}
+  basePosition: {x: 0, y: 0, z: 0}
 --- !u!65 &2108179640
 BoxCollider:
   m_ObjectHideFlags: 0

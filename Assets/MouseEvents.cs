@@ -5,24 +5,25 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
+using UnityEngine.UIElements;
 
 public class MouseEvents : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas _canvas;
     private CanvasGroup _canvasGroup;
     private RectTransform _rectTransform;
-    public RectTransform baseRectTransform;
+    public Vector3 basePosition;
 
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
-        baseRectTransform = _rectTransform;
         _canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         print("Down");
+        basePosition = _rectTransform.position;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -37,20 +38,10 @@ public class MouseEvents : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         print("end drag");
         _canvasGroup.alpha = 1f;
         _canvasGroup.blocksRaycasts = true;
-        baseRectTransform = _rectTransform;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        print("Collision");
-        if (other.gameObject.CompareTag("Item"))
-        {
-            _rectTransform = baseRectTransform;
-        }
     }
 }

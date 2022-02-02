@@ -1,50 +1,61 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using TMPro;
 
 public class ItemSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Canvas _canvas;
     private List<RaycastResult> _results;
-    
+
     public void OnDrop(PointerEventData eventData)
     {
-        print("Droped");
-        _results = _canvas.GetComponent<UIRaycaster>().results;
-        foreach (var result in _results)
-        {
-            print($"{result.gameObject.name}");
-            if (result.gameObject.CompareTag("Item"))
-            {
-                eventData.pointerDrag.GetComponent<RectTransform>().position =
-                    eventData.pointerDrag.GetComponent<MouseEvents>().baseRectTransform.position;
-            }
-        }
+        var gl = _canvas.GetComponent<GameLogic>();
+        var itemPosition = eventData.pointerDrag.GetComponent<RectTransform>();
+        var itemBasicPosition = eventData.pointerDrag.GetComponent<MouseEvents>().basePosition;
         
+        print("Droped");
+
         if (eventData.pointerDrag != null )
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().position =
+            itemPosition.position =
                 GetComponent<RectTransform>().position;
-            if (this.gameObject.CompareTag("Player"))
+            
+            int cost = Int32.Parse(eventData.pointerDrag.GetComponentInChildren<TextMeshProUGUI>().text);
+            
+            if (this.gameObject.CompareTag("Player") && gl.traderItems.Contains(eventData.pointerDrag))
             {
-                if (_canvas.GetComponent<GameLogic>().traderItems.Contains(eventData.pointerDrag))
+                if (gl.playerGold >= cost)
                 {
-                    _canvas.GetComponent<GameLogic>().traderItems.Remove(eventData.pointerDrag); 
-                    _canvas.GetComponent<GameLogic>().playerItems.Add(eventData.pointerDrag); 
-                    _canvas.GetComponent<GameLogic>().UpdateGold();
+                    gl.traderItems.Remove(eventData.pointerDrag); 
+                    gl.playerItems.Add(eventData.pointerDrag);
+                    gl.playerGold -= cost;
+                    gl.traderGold += cost;
+                    gl.UpdateGold();
+                }
+                else
+                { 
+                    itemPosition.position = itemBasicPosition;
                 }
             }
             
-            if (this.gameObject.CompareTag("Trader"))
+            if (this.gameObject.CompareTag("Trader") && gl.playerItems.Contains(eventData.pointerDrag))
             {
-                if (_canvas.GetComponent<GameLogic>().playerItems.Contains(eventData.pointerDrag))
+                if (gl.traderGold >= cost)
                 {
-                    _canvas.GetComponent<GameLogic>().playerItems.Remove(eventData.pointerDrag); 
-                    _canvas.GetComponent<GameLogic>().traderItems.Add(eventData.pointerDrag); 
-                    _canvas.GetComponent<GameLogic>().UpdateGold();
+                    gl.playerItems.Remove(eventData.pointerDrag); 
+                    gl.traderItems.Add(eventData.pointerDrag);
+                    gl.traderGold -= cost;
+                    gl.playerGold += cost;
+                    gl.UpdateGold();
+                }
+                else
+                {
+                    itemPosition.position = itemBasicPosition;
                 }
             }
         }
